@@ -1,0 +1,48 @@
+/* .scroll_top {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+    bottom: 50px;
+    right: 30px;
+    background-color: #f2eded24;
+}
+
+.scroll_top svg {
+    font-size: 26px;
+    color: #015aff;
+  }
+
+  .progress-circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+  }
+
+  .progress-background {
+    fill: #f2eded24;
+    stroke: #ededed;
+    stroke-width: 5;
+  }
+
+  .progress-circle-bar {
+    fill: none;
+    stroke: #007aff;
+    stroke-width: 5;
+    stroke-dasharray: 283;
+    stroke-dashoffset: 283;
+    transition: stroke-dashoffset 0.3s ease;
+  }
+
+  .scroll_top.show {
+    opacity: 1;
+  } */
+
