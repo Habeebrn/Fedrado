@@ -326,6 +326,12 @@
           li {
             font-size: 14px;
             color: #ffffffad;
+            cursor: pointer;
+
+            &:hover {
+              color: #ffffff;
+              
+            }
 
             @media (max-width: 760px) {
                 font-size: 13px;

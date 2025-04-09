@@ -5,11 +5,15 @@ import { LuArrowDownRight } from 'react-icons/lu'
 import  UseheroBreakPoint  from "./heroBreakPoint"
 import { useNavigate } from 'react-router-dom'
 import { scroller } from 'react-scroll';
+import { IoCall } from 'react-icons/io5'
+import { TbPhoneCall } from 'react-icons/tb'
+import Shedule from '../Shedule/Shedule'
 
 
 const Hero = () => {
 
   const breakpoint = UseheroBreakPoint();
+
   const isMobile = breakpoint <= 470;
 
 
@@ -17,6 +21,7 @@ const Hero = () => {
 
 
   const handleNavigation = ()=> {
+
     navigation("/service");
   }
 
@@ -32,12 +37,17 @@ const Hero = () => {
   return (
     <div className='hero'>
 
+ <div className="hero_cotent_box_1">
+
+    
+
         <div className="logo_text">
-            <div className="line_"></div>
-              <h3>Fedrado</h3>
-            <div className="line_"></div>
+            {/* <div className="line_"></div> */}
+              <h3>YOUR GATEWAY TO SUCCESS!
+              </h3>
+            {/* <div className="line_"></div> */}
         </div>
-        <h2>DIGITAL BUSINESS SOLUTION</h2>
+        <h2>WE ARE HERE TO MAKE YOUR FUTURE DREAMS COME TRUE</h2>
 
         { isMobile ? 
  <p>
@@ -58,7 +68,12 @@ Innovative solutions to elevate your brand, drive growth, and transform your dig
             }}
 
             className="getInBtn">
-            Get In Touch <MdOutlineArrowOutward />
+                 <TbPhoneCall />
+
+            Call Us now
+            {/* <MdOutlineArrowOutward /> */}
+        
+
             </div>
 
 
@@ -66,10 +81,18 @@ Innovative solutions to elevate your brand, drive growth, and transform your dig
             
             onClick={handleScroll}
             className="larnMoreBtn">
-                Learn More <LuArrowDownRight />
+                Our Cources <LuArrowDownRight />
             </div>
 
       
+        </div>
+
+        </div>
+
+        <div className="hero_cotent_box_2">
+
+        <Shedule />
+
         </div>
         
     </div>

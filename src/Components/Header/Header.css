@@ -3,22 +3,23 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  width: 50%;
-  padding: 0 30px;
+  width: 100%;
+  padding: 0 100px;
   position: fixed;
-  left: 0;
-  top: 15px;
+  top: 30px;
+  /* left: 0; */
+  /* top: 15px; */
   z-index: 99;
-  background-color: #d8f8d4a9;
+  background-color: #ffffffa9;
   color: #013519;
-  translate: 48%;
-  border-radius: 18px;
-  box-shadow: rgba(0, 0, 0, 0.158) 0px 1px 4px;
+  /* translate: 48%; */
+  /* border-radius: 18px; */
+  box-shadow: 0 4px 8px rgb(255 255 255 / 4%);
 
   /* transition: backdrop-filter 0.3s ease; */
 
   &:hover {
-    background-color: #d3fcdd;
+    /* background-color: #d3fcdd; */
     cursor: pointer;
     transition: 0.3s;
     border: none;
@@ -61,7 +62,7 @@ header ul li {
   font-size: 13px;
   font-weight: 400;
   cursor: pointer;
-  color: #edfced;
+  color: 034972;
   /* background-color: #ddfceb; */
   /* text-shadow: 2px 2px 5px rgb(112, 110, 110); Slight shadow */
 
@@ -83,7 +84,7 @@ header ul li .active {
 
 @media (max-width: 1040px) {
   header {
-    padding: 0 50px;
+    padding: 0 28px;
   }
 }
 
@@ -101,13 +102,13 @@ header ul li .active {
 
     display: flex !important;
     /* flex-direction: column; */
-    position: absolute;
+    /* position: absolute;
     top: 92px;
-    right: 0;
-    background-color: #013519;
+    right: 0; */
+    /* background-color: #013519; */
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    width: 50%;
     max-width: 938px;
     /* padding: 23px; */
     height: 37px;
@@ -148,7 +149,7 @@ header ul li .active {
   }
 
   .mobile-menu li:hover {
-    color: lightgreen;
+    /* color: lightgreen; */
   }
 }
 
@@ -194,7 +195,7 @@ header ul li .active {
     top: 50px;
   }
   header svg {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
@@ -213,7 +214,7 @@ header ul li .active {
 
 @media (max-width: 449px) {
   header {
-    padding: 0 17px;
+    padding: 0 13px;
     height: 38px;
     border-radius: 9px;
     width: 53%;
@@ -233,4 +234,21 @@ header ul li .active {
 
 .menu-icon_close {
     color: rgb(105, 30, 30);
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(214, 3, 3);
+      transition: 0.3s;
+    
+    }
+}
+
+.menu-icon {
+
+  cursor: pointer;
+  
+  &:hover {
+    color: rgb(4, 153, 17);
+    transition: 0.3s;
+  }
 }

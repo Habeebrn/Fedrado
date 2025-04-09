@@ -1,16 +1,31 @@
 
 .shedule {
 
+    // width: 100%;
+    // height: 100%;
+    // display: flex;
+
+    // align-items: center;
+    // justify-content: center;
+    // background-color: rgb(110 205 150 / 27%);
+    // position: fixed;
+    // backdrop-filter: blur(2px);
+    // z-index: 99;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    // align-items: center;
+
     width: 100%;
     height: 100%;
-    display: flex;
-
+    display: flex
+;
     align-items: center;
     justify-content: center;
-    background-color: rgb(110 205 150 / 27%);
-    position: fixed;
+    background-color: rgba(110, 205, 150, 0.27);
+    /* position: fixed; */
     backdrop-filter: blur(2px);
-    z-index: 99;
+    /* z-index: 99; */
     top: 0;
     left: 0;
     right: 0;
@@ -75,9 +90,10 @@
   // border-radius: 20px;
   // flex-direction: column;
 
-  width: 90%;
-  height: 89%;
-  padding: 70px 80px 100px 80px;
+  width: 70%;
+  // height: 89%;
+  // padding: 70px 80px 100px 80px;
+  padding: 50px;
   display: flex;
   background-color: var(--primary);
   margin: 0 auto;
@@ -247,10 +263,17 @@
     }
   
     .contact_us_container_sub_2 {
-      width: 55%;
+      width: 100%;
   
       @media (max-width: 780px) {
         width: 100%;
+      }
+
+      h6 {
+        font-size: 22px;
+        font-weight: 700;
+        color: #ffff;
+        margin-bottom: 20px;
       }
   
       form {
@@ -268,8 +291,9 @@
           column-gap: 20px;
   
           .input_container {
-            width: 48%;
+            width: 100%;
             margin-bottom: 20px;
+       
   
             label {
               display: block;
@@ -341,8 +365,10 @@
   
         button {
           padding: 14px 50px;
-          background-color: #027935;
-          color: white;
+          width: 100%;
+          background-color: #FFF;
+
+          color: darkblue;
           font-size: 18px;
           border-radius: 10px;
 

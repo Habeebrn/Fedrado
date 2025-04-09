@@ -5,9 +5,9 @@ import React from "react";
 import "./Footer.scss";
 import { RiMessage2Line } from "react-icons/ri";
 import { assets } from "../../Assets/assets";
-import UseheroBreakPoint from "../OurService/ourservice";
 
-const Footer = () => {
+const Footer = ( {refs} ) => {
+
   const breakpoint = UseheroBreakPoint();
 
   const isBig = breakpoint > 865;
@@ -15,6 +15,19 @@ const Footer = () => {
   const isTabSmall = breakpoint <= 760; // Specifically for smaller devices
 
   const isMobileSmall = breakpoint <= 395;
+
+
+  
+  const { homeRef, aboutRef, serviceRef, workRef, footerRef } = refs;
+
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' }); // Smooth scrolling
+    }
+  };
+
 
   return (
     <div className="footer">
@@ -74,11 +87,10 @@ const Footer = () => {
           <div className="footer_items_li_continer">
             <ul>
               <li className="headingUl">MENU</li>
-              <li>Home</li>
-              <li>Service</li>
-              <li>Our Work</li>
-              <li>Projects</li>
-              <li>About Us</li>
+              <li onClick={() => scrollToSection('homeRef')}>Home</li>
+
+  <li onClick={() => scrollToSection('workRef')}>Our Work</li>  <li onClick={() => scrollToSection('footerRef')}>Contact us</li>
+  <li onClick={() => scrollToSection('aboutRef')}>About Us</li>
             </ul>
 
             <ul>
