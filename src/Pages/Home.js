@@ -10,6 +10,7 @@ import "./Home.css";
 
 import Footer from "../Components/Footer/Footer";
 import EmptyDiv from "../Components/EmptyDiv/EmptyDiv";
+import CourceCom from "../Components/CourceCom/CourceCom";
 
 const Home = () => {
   const homeRef = useRef(null);
@@ -40,26 +41,29 @@ const Home = () => {
       <div id="home" ref={homeRef}>
         <Hero />
       </div>
+      
+      <div id="cource_component" ref={aboutRef}>
+        {/* <Section2 /> */}
+        <CourceCom />
+      </div>
+      
       <div id="about" ref={aboutRef}>
         {/* <Section2 /> */}
         <About_us />
       </div>
 
 
-      <div id="footer" ref={footerRef}>
-        <Footer
-
-refs={{
+      {/* <div id="footer" ref={footerRef}>
+        
+        <Footer refs={{
   homeRef,
   aboutRef,
-  serviceRef,
-  workRef,
   footerRef,
 }}
 
         
-        />
-      </div>
+       
+      </div> */}
     </div>
   );
 };
